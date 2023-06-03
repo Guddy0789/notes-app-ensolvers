@@ -7,7 +7,7 @@ const sequelize = new Sequelize(development.database, development.username, deve
       port: development.dbbPort,
   });
 
-  sequelize.sync({ force: false})
+  sequelize.sync({ alter: true})
     .then(() => {
       console.log('\x1b[32m','Conectado a la base de datos -- force false:'+process.env.DB_DATABASE);
     })
