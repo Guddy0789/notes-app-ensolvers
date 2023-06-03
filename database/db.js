@@ -4,7 +4,7 @@ const {development} = require('../config/config')
 const sequelize = new Sequelize(development.database, development.username, development.password, {
     host: 'localhost',
     dialect: 'mysql',
-    // port: development.port,
+      port: development.dbbPort,
   });
 
   sequelize.sync({ force: false})
