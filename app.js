@@ -24,9 +24,7 @@ app.listen(port, () => {
   //  sequelize.sync({ force: false})
 
 })
-app.listen(port, "0.0.0.0", function () {
-  // ...
-});
+
 
 app.get('/indextest', (req, res) => {
     const data = {
